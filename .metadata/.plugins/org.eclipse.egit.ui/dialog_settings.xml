@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="2" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<item value="C:\Users\Ivan_Pribylov\git\qa-rfe\.git" key="GitSelectRepositoryPage.lastRepository"/>
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com:8000/IvanPribylov/qa-rfe"/>
+		<item value="https://github.com/IvanPribylov/qa-rfe"/>
+		<item value="https://github.com:8080/IvanPribylov/qa-rfe/tree/master/rfe-webapi"/>
+		<item value="https://github.com/IvanPribylov/qa-rfe/tree/master/rfe-webapi"/>
+		<item value="https://github.com/IvanPribylov/qa-rfe.git"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="Ivan Pribylov &lt;Ivan_Pribylov@epam.com&gt;"/>
+		<item value="Ivan_Pribylov &lt;Ivan_Pribylov@EPRURYAW0942.moscow.epam.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Ivan Pribylov &lt;Ivan_Pribylov@epam.com&gt;"/>
+		<item value="Ivan_Pribylov &lt;Ivan_Pribylov@EPRURYAW0942.moscow.epam.com&gt;"/>
+	</list>
+	<section name="GitImportWizard">
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item value="666" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="458" key="DIALOG_HEIGHT"/>
+		<item value="496" key="DIALOG_X_ORIGIN"/>
+		<item value="423" key="DIALOG_Y_ORIGIN"/>
+		<list key="sashWeights">
+			<item value="600"/>
+			<item value="400"/>
+		</list>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="C:\CCC\qa-rfe\.git">
+			<item value="empty"/>
+		</list>
+	</section>
+	<section name="GitCommitSearchPage">
+		<item value="1" key="HISTORY_SIZE"/>
+		<section name="HISTORY0">
+			<section name="searchSection">
+				<item value="1" key="repositoryCount"/>
+				<item value="C:\CCC\qa-rfe\.git" key="repository0"/>
+				<item value="false" key="regexSearch"/>
+				<item value="true" key="matchAuthor"/>
+				<item value="true" key="matchMessage"/>
+				<item value="true" key="ignoreCase"/>
+				<item value="true" key="matchParents"/>
+				<item value="false" key="allBranches"/>
+				<item value="true" key="matchCommit"/>
+				<item value="true" key="matchTree"/>
+				<item value="Expand all" key="textPattern"/>
+				<item value="true" key="matchCommitter"/>
+			</section>
+		</section>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.dialogs.CompareTargetSelectionDialog.dialogBounds">
+		<item value="538" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="484" key="DIALOG_HEIGHT"/>
+		<item value="699" key="DIALOG_X_ORIGIN"/>
+		<item value="266" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="500,500" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>

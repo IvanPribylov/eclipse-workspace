@@ -1,0 +1,16 @@
+package Tests.dataProviders;
+
+
+import org.testng.annotations.DataProvider;
+
+
+
+public class ProviderNew {
+	
+	@DataProvider(name = "dp")
+	public Object[] dp() {
+		return new Object[] {1.0, 10000.0, 2.5 };	
+	}
+	
+}
+

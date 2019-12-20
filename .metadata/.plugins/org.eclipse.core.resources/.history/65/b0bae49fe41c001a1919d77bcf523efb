@@ -1,0 +1,382 @@
+package com.copyright.rup.qa.rfe.tests.pages;
+
+import com.copyright.rup.common.logging.RupLogUtils;
+import com.copyright.rup.qa.common.ui.support.DriverRunner;
+import com.copyright.rup.qa.common.ui.support.UiSelectors;
+import com.copyright.rup.qa.common.ui.support.UiSupport;
+import com.copyright.rup.qa.common.ui.support.element.IUiElement;
+import com.copyright.rup.qa.rfe.tests.elements.Button;
+import com.copyright.rup.qa.rfe.tests.elements.Label;
+import com.copyright.rup.qa.rfe.tests.elements.Table;
+import com.copyright.rup.qa.rfe.tests.elements.annotations.Element;
+import com.copyright.rup.qa.rfe.tests.elements.annotations.ElementTypes;
+import com.copyright.rup.qa.rfe.tests.utils.Constants;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
+import org.slf4j.Logger;
+
+import java.util.NoSuchElementException;
+
+/**
+ * Cart page.
+ * @author Alexander_Kapitanov
+ *
+ */
+public class CartPage extends CommonPageWithGrid implements IPage, IPageWithTables{
+
+    /**
+     * Constructor.
+     */
+    public CartPage() {
+        super.setName(this.name);
+        super.setTitleElementLocator(this.title);
+    }
+
+    private static final Logger LOGGER = RupLogUtils.getLogger();
+
+    
+    private By title = By.xpath(".//*[@id='headerDiv']//*[text()='Cart']");
+    private String name = "Cart";
+    private String gridId = "CartGrid";
+    private String toolbarId = "actionRow";
+    
+    private String itemXpathPattern = ".//*[@id='CartGrid_ctl00__%s']";
+    private By itemTitle = By.xpath(
+            "(.//*[contains(@class,'rfemdTitle')])[2]");
+    private By itemPrice = By.xpath(".//span[contains(@class,'Price')][2]");
+    private By itemUsage = By.xpath(".//*[text()='Usage:']/following-sibling::*");
+    private By itemChangeLink = By.cssSelector(".cartActionLinkChange");
+    private By itemRemoveLink = By.cssSelector(".cartActionLinkRemove");
+    private By itemTermsApplyLink = By.xpath(".//*[contains(@id,'TERMS')][contains(@class,'link')]");
+    private String itemTermsApplyCheckboxXpathPattern =
+          ".//*[@id='CartGrid_ctl00__%s']//*[contains(@id,'TERMS')][@type='checkbox']";    
+    
+    private By emptyCartButton = By.id("EmptyBtn");
+    private By submitContentRequestButton = By.id("OrderBtn");
+    private By paymentMethodField = By.id("PaymentMethodList_Input");
+    private String paymentMethodListItemXpathPattern = ".//*[@id='PaymentMethodList_DropDown']//li[text()='%s']";
+    private String itemInfoXpathPattern = ".//*[text()='%s']/following-sibling::*";
+    
+    private By taxLabel = By.id("TaxLabel");
+    private By addCardButton = By.id("AddEditCCInfoBtn");
+    
+    private By itemInCart= By.xpath(".//*[contains(@id,'CartGrid_ct')]/td[1]");
+    
+    private String citInfoLabelXpathPattern = 
+       
+    "(.//*[@id='CartGrid_ctl00__%s']//div[@class='rfemdRow'])[3]";
+    
+    /**
+     * 
+     * @return credit card field page part
+     */
+    public CartCreditCard creditCard() {
+        return new CartCreditCard();
+    }
+    /**
+     * Submit Content Request button.
+     * @return Button
+     */
+    @Element(name="Submit Content Request", type= ElementTypes.BUTTON)
+    public Button submitContentRequestButton() {
+        return new Button(submitContentRequestButton, Constants.CONTENT_FRAME_LOCATOR, "Submit Content Request");
+    }
+    
+    /**
+     * Add card button.
+     * @return Button
+     */
+    @Element(name = "Add Card", type = ElementTypes.BUTTON)
+    public Button addCardButton() {
+        return new Button(addCardButton, Constants.CONTENT_FRAME_LOCATOR, "Add Card");
+    }
+    
+    
+    
+    /**
+     * 
+     * @param itemIndex 
+     * @return title of item with index
+     */
+    public String getItemTitle(int itemIndex) {
+        LOGGER.debug("Cart. Get title of item #{}", itemIndex);
+        switchToContentFrame();
+        String itemXpath = String.format(itemXpathPattern, itemIndex);
+        IUiElement item = UiSupport.find(By.xpath(itemXpath));
+        IUiElement el = item.find(itemTitle);
+        String itemTitleText = getTextWithoutChildren(el);
+        switchToDefaultContent();
+        itemTitleText = itemTitleText.replace(" ", " ").trim(); //special space replaces with common space
+        LOGGER.debug("Cart. Item title = {}", itemTitleText);
+        return itemTitleText;                
+    }
+    
+    /**
+     * 
+     * @param itemIndex 
+     * @return price of item with index
+     */
+    public String getItemPrice(int itemIndex) {
+        LOGGER.debug("Cart. Get price of item #{}", itemIndex);
+        switchToContentFrame();
+        String itemXpath = String.format(itemXpathPattern, itemIndex);
+        IUiElement item = UiSupport.find(UiSelectors.byXpath(itemXpath));
+        IUiElement el = item.find(itemPrice);
+        String price = el.getText();
+        switchToDefaultContent();
+        LOGGER.debug("Cart. Item price = {}", price);
+        return price;            
+    }
+    
+
+    /**
+     * 
+     * @param itemIndex 
+     * @return usage text of item
+     */
+    public String getItemUsage(int itemIndex) {
+        LOGGER.debug("Cart. Get Usage of item #{}", itemIndex);
+        switchToContentFrame();
+        String itemXpath = String.format(itemXpathPattern, itemIndex);
+        IUiElement item = UiSupport.find(UiSelectors.byXpath(itemXpath));
+        IUiElement el = item.find(itemUsage);
+        String usageText = el.getText();
+        switchToDefaultContent();
+        LOGGER.debug("Cart. Item Usage = {}", usageText);
+        return usageText;
+    }
+    
+    /**
+     * 
+     */
+    public void clickEmptyCartButton() {
+        LOGGER.debug("Empty cart");
+        switchToContentFrame();
+        click(emptyCartButton, "Empty Cart button");
+        UiSupport.confirm();
+        switchToDefaultContent();
+        waitLoading();
+    }
+    
+    /**
+     * 
+     */
+    public void clickSubmitContentRequestButton() {
+        waitLoading();
+        switchToDefaultContent();
+        IUiElement panelFrame = UiSupport.find(Constants.PANEL_FRAME_LOCATOR);
+        if (!panelFrame.exists()) {
+            clickInContentFrame(submitContentRequestButton, "Submit Content Request button");
+        } else {
+            switchToPanelFrame();
+            click(submitContentRequestButton, "Submit Content Request button");
+        }
+        waitLoading();
+    }
+    
+    /**
+     * @return text
+     */
+    public String clickSubmitContentRequestButtonAndGetAlertText() {
+        switchToContentFrame();
+        click(submitContentRequestButton, "Submit Content Request button");
+        String alertText = UiSupport.switchTo().alert().getText();
+        LOGGER.debug("Alert message: {}", alertText);
+        UiSupport.confirm();
+        switchToDefaultContent();
+        waitLoading();
+        return alertText;
+    }
+    
+    /**
+     * 
+     * @return true if available
+     */
+    public boolean isEmptyCartButtonAvailable() {
+        LOGGER.debug("Is Empty cart button available");
+        boolean result = false;
+        switchToContentFrame();
+        result = isElementDispalyed(emptyCartButton, "Empty Cart Button") 
+            && isElementEnabled(emptyCartButton, "Empty Cart Button");
+        switchToDefaultContent();
+        LOGGER.debug("Empty Cart button is available: {}", result);
+        return result;
+    }
+    
+    /**
+     * @param itemIndex 
+     * @return true if available
+     */
+    public boolean isChangeLinkEnabled(int itemIndex) {
+        LOGGER.debug("Is Change link available for item #{}", itemIndex);
+        boolean result = false;
+        switchToContentFrame();
+        String itemXpath = String.format(itemXpathPattern, itemIndex);
+        IUiElement itemElement = UiSupport.find(UiSelectors.byXpath(itemXpath));
+        result = isElementDispalyed(itemChangeLink, itemElement);        
+        switchToDefaultContent();
+        LOGGER.debug("Change link is available for item #{}: {}", itemIndex, result);
+        return result;
+    }
+    
+    /**
+     * @param itemIndex 
+     * @return true if available
+     */
+    public boolean isRemoveLinkEnabled(int itemIndex) {
+        LOGGER.debug("Is Remove link available for item #{}", itemIndex);
+        boolean result = false;
+        switchToContentFrame();
+        String itemXpath = String.format(itemXpathPattern, itemIndex);
+        IUiElement itemElement = UiSupport.find(UiSelectors.byXpath(itemXpath));
+        result = isElementDispalyed(itemRemoveLink, itemElement);
+        switchToDefaultContent();
+        LOGGER.debug("Remove link is available for item #{}: {}", itemIndex, result);
+        return result;
+    }
+    
+    /**
+     * @param itemIndex 
+     * @return true if available
+     */
+    public boolean isTermsApplyLinkEnabled(int itemIndex) {
+        LOGGER.debug("Is Terms Apply link available for item #{}", itemIndex);
+        boolean result = false;
+        switchToContentFrame();
+        String itemXpath = String.format(itemXpathPattern, itemIndex);
+        IUiElement itemElement = UiSupport.find(UiSelectors.byXpath(itemXpath));
+        result = isElementDispalyed(itemTermsApplyLink, itemElement);
+        switchToDefaultContent();
+        LOGGER.debug("Terms Apply link is available for item #{}: {}", itemIndex, result);
+        return result;
+    }
+    
+    /**
+     * 
+     * @return value
+     */
+    public String getPaymentMethod() {
+        switchToContentFrame();
+        String value = getValue(paymentMethodField, "Payment method");
+        switchToDefaultContent();
+        return value;
+    }
+
+    /**
+     * 
+     * @return true if displayed
+     */
+    public boolean isPaymentMethodDisplayed() {
+        switchToContentFrame();
+        boolean result = isElementDispalyed(paymentMethodField, "Payment Method field");
+        switchToDefaultContent();
+        return result;
+    }     
+    
+    /**
+     * 
+     * @param value 
+     * @return true if displayed
+     */
+    public boolean isPaymentMethodListContainsValue(String value) {
+        LOGGER.debug("Check if Payment Method list contains value: {}", value);
+        switchToContentFrame();
+        click(paymentMethodField, "Payment Method");
+        String xpath = String.format(paymentMethodListItemXpathPattern, value);
+        boolean result = isElementDispalyed(By.xpath(xpath), "Payment Method list item: " + value);
+        new Actions(DriverRunner.getWebDriver()).sendKeys(Keys.ESCAPE).build().perform();
+        switchToDefaultContent();
+        LOGGER.debug("Payment Method list contains value {} : {}", value, result);
+        return result;
+    }
+    
+    /**
+     * 
+     * @param itemIndex 
+     * @param infoName with ":" if present - examples: "Copyright:" but "Warning"
+     * @return info
+     */
+    public String getItemInfo(int itemIndex, String infoName) {
+        LOGGER.debug("Get info '{}' from item #{} in cart", infoName, itemIndex);
+        switchToContentFrame();
+        String itemXpath = String.format(itemXpathPattern, itemIndex);
+        IUiElement item = UiSupport.find(UiSelectors.byXpath(itemXpath));
+        By infoXpath = UiSelectors.byXpath(String.format(itemInfoXpathPattern, infoName));
+        try {
+            IUiElement el = item.find(infoXpath);
+            String info;
+            if ("Warning".equals(infoName)) {
+                info = el.getText(); //warning has red color in inner tag
+            } else {
+                info = getTextWithoutChildren(el);
+            }
+            
+            LOGGER.debug("{} for item #{} is '{}'", infoName, itemIndex, info);
+            switchToDefaultContent();
+            return info;
+        } catch (NoSuchElementException e) {
+            switchToDefaultContent();
+            Assert.fail("Cant find " + infoName + " for item #" + itemIndex);
+            return null;
+        }
+    }
+    
+    /**
+     * 
+     * @return tax
+     */
+    public String getTax() {
+        return getTextInContentFrame(taxLabel, "Tax label");
+    }
+    
+    /**
+     * 
+     * @param itemIndex starts from 0
+     * @param isChecked 
+     */
+    public void setItemTermsApplyCheckbox(int itemIndex, boolean isChecked) {
+        By xpath = By.xpath(String.format(itemTermsApplyCheckboxXpathPattern, itemIndex));
+        setCheckboxInContentFrame(xpath, "Terms Apply", isChecked);
+    }
+    
+    /**
+     * 
+     * @param itemIndex 
+     * @return true if displayed
+     */
+    public boolean isItemTermsApplyCheckboxDisplayed(int itemIndex) {
+        By xpath = By.xpath(String.format(itemTermsApplyCheckboxXpathPattern, itemIndex));
+        return isElementDispalyedInContentFrame(xpath, "Terms Apply checkbox");
+    }
+    
+    /**
+     * 
+     * @return number of items in cart
+     */
+    public int getNumberOfItemsInCart() {
+        LOGGER.debug("Get number of items in cart");
+        switchToContentFrame();
+        int size = UiSupport.findAll(itemInCart).size();
+        switchToDefaultContent();
+        LOGGER.debug("Items in cart: {}", size);
+        return size;
+    }
+    
+    /**
+     * 
+     * @param index .
+     * @return Label
+     */
+    public Label citInfoLabel(int index) {
+        By xpath = By.xpath(String.format(citInfoLabelXpathPattern, index - 1));
+        return new Label(xpath, Constants.CONTENT_FRAME_LOCATOR, "Cit value #" + index);
+    }
+
+    @Override
+    public Table getTable(String tableName) {
+        return new Table(toolbarId, gridId, Constants.CONTENT_FRAME_LOCATOR);
+    }
+}

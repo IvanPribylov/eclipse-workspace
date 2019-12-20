@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.buildship.ui.wizard.project.import">
+		<item value="false" key="apply_working_sets"/>
+		<item value="C:\CCC\qa-rfe\rfe-webapi" key="project_location"/>
+		<list key="working_sets">
+		</list>
+	</section>
+	<section name="org.eclipse.buildship.ui.wizard.project.creation">
+		<item value="false" key="use_default_location"/>
+		<item value="C:\CCC\qa-rfe\rfe-webapi" key="custom_location"/>
+		<item value="C:\CCC\qa-rfe\rfe-webapi\rfe-webapi" key="project_location"/>
+	</section>
+</section>

@@ -1,0 +1,132 @@
+package com.copyright.rup.qa.rfe.tests.pages;
+
+import com.copyright.rup.common.logging.RupLogUtils;
+import com.copyright.rup.qa.common.ui.support.UiSupport;
+import com.copyright.rup.qa.common.ui.support.element.IUiElement;
+import com.copyright.rup.qa.rfe.tests.elements.Button;
+import com.copyright.rup.qa.rfe.tests.elements.annotations.Element;
+import com.copyright.rup.qa.rfe.tests.elements.annotations.ElementTypes;
+import com.copyright.rup.qa.rfe.tests.utils.Constants;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.slf4j.Logger;
+
+/**
+ * Citation Section from CRO page.
+ * @author Alexander_Kapitanov
+ *
+ */
+public class ContentRequestOptionsCitation extends BasePage{
+
+    private static final Logger LOGGER = RupLogUtils.getLogger();
+    
+    private By abstractLink = By.cssSelector("#abstractlink_exact .rfeLabel");
+    private By abstractContent = By.id("abstractc_exact");
+    private By changeCitationButton = By.id("CitChangeBtn");
+    private By otherMatchesButton = By.id("ChoicesBtn_input");
+    private By copyCitationButton = By.id("CopyCitationBtn_input");
+    private By copyShareCitationsButton = By.xpath(
+        ".//*[@id='OptionsMenu_detached']//*[text()='Copy to Clipboard']");
+    private By showAdditionalIdsButton = By.cssSelector(".rfemdViewLink");
+    private By additionalIds = By.cssSelector(".rfemdIdentifiers");
+    
+    private String rfmDataID = "//*[text()='%s:']/following-sibling::div";
+    
+    private IUiElement getallIds(String parameter) {
+    String xpath = String.format(rfmDataID, parameter);
+    return UiSupport.find(By.xpath(xpath));
+    }
+
+    /**
+     * Copy Citation button.
+     * @return Button
+     */
+    @Element(name = "Copy Citation",type = ElementTypes.BUTTON)
+    public Button copyCitationButton() {
+        return new Button(copyCitationButton, Constants.CONTENT_FRAME_LOCATOR, "Copy Citation");
+    }
+    
+    /**
+     * 
+     * @return true if enabled
+     */
+    public boolean isAbstractLinkAvailable() {
+        LOGGER.debug("Check if Abstract link enabled");
+        switchToContentFrame();
+        boolean result = isElementDispalyed(abstractLink);
+        switchToDefaultContent();
+        LOGGER.debug("Abstract link enabled: {}", result);
+        return result;
+    }
+
+    /**
+     * 
+     */
+    public void clickAbstract() {
+        if (isAbstractLinkAvailable()) {
+            clickInContentFrame(abstractLink, "Abstract link");
+        } else {
+            Assert.fail("Abstract link is not available. Can't click it");
+        }
+    }
+    
+    /**
+     * 
+     * @return true if displayed
+     */
+    public boolean isAbstractContentDispalyed() {
+        boolean result = isElementDispalyedInContentFrame(abstractContent, "Abstract Content");
+        return result;
+    }
+    
+    /**
+     * 
+     */
+    public void changeCitation() {
+        clickInContentFrame(changeCitationButton, "Change Citation Button");
+    }
+    
+    /**
+     * 
+     */
+    public void clickOtherMatchesButton() {
+        clickInContentFrame(otherMatchesButton, "Other Matches Button");
+    }
+    
+    /**
+     * 
+     */
+    public void copyCiataion() {
+        copyCitationButton().click();
+        waitLoading();
+        clickInContentFrame(copyShareCitationsButton, "Copy/Share Citations Button");
+        switchToDefaultContent();
+    }
+    
+   
+    /**
+    * Citation text contains its name and value delimited with ":".
+    * Example: "ITC:12345" 
+    * @param parameter like "Catalog ID", "DOI"...
+    * @return value 
+    */
+    public String getCitaionParamValue(String parameter) {
+
+    switchToContentFrame();
+    if (!UiSupport.find(additionalIds).isDisplayed()) {
+    UiSupport.find(showAdditionalIdsButton).click();
+    }
+    String value = getallIds(parameter).getText();
+    LOGGER.debug(parameter + ": " + value);
+    return value;
+    }
+}
+
+
+
+	
+
+
+
+

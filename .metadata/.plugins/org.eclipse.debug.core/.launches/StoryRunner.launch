@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/rfe-webapi/src/main/java/com/copyright/rup/qa/rfe/tests/runner/StoryRunner.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.buildship.core.classpathprovider"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.copyright.rup.qa.rfe.tests.runner.StoryRunner"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="rfe-webapi"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dqaa.story=e2e-3_*&#13;&#10;-Dqaa.filter=-CRO&#13;&#10;-Dselenide.headless=false&#13;&#10;-Dqaa.nosandbox=false&#13;&#10;-Dqaa.browser=chrome&#13;&#10;-Dqaa.uiUrl=https://www.test.rightfind.com/&#13;&#10;-Dqaa.threads=1&#13;&#10;-Dqaa.rerun_threads=0&#13;&#10;-Drp.uuid=61f31625-73f4-4721-b58d-afac275a8b2e&#13;&#10;-Dqaa.clearchrome=false&#13;&#10;-Drp.project=IPRIBYLOV_PERSONAL&#13;&#10;-Dqaa.story=e2e-3_*"/>
+</launchConfiguration>

@@ -1,0 +1,16 @@
+package Tests.TestFigures;
+
+import org.testng.annotations.Test;
+
+import Tests.dataProviders.ProviderNew;
+import epam.saratov.homeWork.testng.objects.GeometricObjects;
+import epam.saratov.homeWork.testng.objects.GeometricObjects.Circle;
+
+public class Figures {
+	@Test(dataProvider = "dp", dataProviderClass = ProviderNew.class)
+	public void checkFigure (Double lengthOne) {
+		Circle circl = new GeometricObjects().getCircle(lengthOne);
+		circl.getClass();
+}
+	
+}

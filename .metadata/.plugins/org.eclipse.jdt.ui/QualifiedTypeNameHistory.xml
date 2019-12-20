@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+<fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.copyright.rup.qa.rfe.tests.pages.CartPage"/>
+<fullyQualifiedTypeName name="com.copyright.rup.qa.rfe.tests.steps.CartSteps"/>
+<fullyQualifiedTypeName name="ch.qos.logback.core.boolex.Matcher"/>
+<fullyQualifiedTypeName name="java.util.Objects"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="com.copyright.rup.qa.common.ui.support.element.IUiElement"/>
+<fullyQualifiedTypeName name="com.copyright.rup.qa.rfe.tests.utils.SoapUtils"/>
+<fullyQualifiedTypeName name="com.copyright.rup.qa.common.ui.support.UiElementCondition"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Tests.DataProvider"/>
+<fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
+<fullyQualifiedTypeName name="Tests.CircleTest"/>
+<fullyQualifiedTypeName name="java.math.BigDecimal"/>
+<fullyQualifiedTypeName name="java.math.RoundingMode"/>
+<fullyQualifiedTypeName name="Tests.roundUp"/>
+<fullyQualifiedTypeName name="com.copyright.rup.qa.common.ui.support.DriverRunner"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Optional"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,22 @@
+package Tests;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
+public class roundUp {
+	
+	public static double round (double  templateDouble) {
+    
+    
+    
+    System.out.println("Template double: " + templateDouble);
+    
+    double newDouble = new BigDecimal(templateDouble).setScale(3, RoundingMode.UP).doubleValue();
+    
+    System.out.println("New double: " + newDouble);
+    
+    return newDouble;
+    
+}
+
+}
