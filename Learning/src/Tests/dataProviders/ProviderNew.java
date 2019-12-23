@@ -4,9 +4,9 @@ import org.testng.annotations.DataProvider;
 
 public class ProviderNew {
 	
-	@DataProvider(name = "dp")
-	public Object[] [] dp() {
-		return (Object[][]) new Object[] { new Object[] {2.0}, new Object[] {2.5}, new Object[] {10000}	};
+	@DataProvider
+	public static Object[] [] dp() {
+		return new Object[][] { new Object[] {2.0}, new Object[] {2.5}, new Object[] {10000}	};
 	
 	}
 }

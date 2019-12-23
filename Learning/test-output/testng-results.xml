@@ -1,226 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="7" failed="4" ignored="0" total="13" passed="2">
+<testng-results skipped="0" failed="3" ignored="0" total="7" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="44" started-at="2019-12-20T11:21:24 MSK" finished-at="2019-12-20T11:21:24 MSK">
+  <suite name="Default suite" duration-ms="40" started-at="2019-12-23T14:55:48 MSK" finished-at="2019-12-23T14:55:48 MSK">
     <groups>
     </groups>
-    <test name="testing" duration-ms="44" started-at="2019-12-20T11:21:24 MSK" finished-at="2019-12-20T11:21:24 MSK">
-      <class name="Tests.TestFigures.CircleTest">
-        <test-method status="SKIP" signature="checkCircumference(java.lang.Double, java.lang.Double)[pri:2, instance:Tests.TestFigures.CircleTest@7791a895, instance params:[]]" name="checkCircumference" duration-ms="0" started-at="2019-12-20T11:21:24 MSK" data-provider="dp" finished-at="2019-12-20T11:21:24 MSK">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:820)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;
-at Tests.dataProviders.ProviderNew.dp(ProviderNew.java:9)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkCircumference -->
-        <test-method status="SKIP" signature="checkSquare(java.lang.Double)[pri:2, instance:Tests.TestFigures.CircleTest@7791a895, instance params:[]]" name="checkSquare" duration-ms="0" started-at="2019-12-20T11:21:24 MSK" data-provider="dp" finished-at="2019-12-20T11:21:24 MSK">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:820)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;
-at Tests.dataProviders.ProviderNew.dp(ProviderNew.java:9)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkSquare -->
-      </class> <!-- Tests.TestFigures.CircleTest -->
-      <class name="Tests.TestFigures.QuadratTest">
-        <test-method status="SKIP" signature="checkSquare(java.lang.Double)[pri:0, instance:Tests.TestFigures.QuadratTest@3a5ed7a6, instance params:[]]" name="checkSquare" duration-ms="0" started-at="2019-12-20T11:21:24 MSK" data-provider="dp" finished-at="2019-12-20T11:21:24 MSK">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:820)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;
-at Tests.dataProviders.ProviderNew.dp(ProviderNew.java:9)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkSquare -->
-        <test-method status="SKIP" signature="checkPerimetr(java.lang.Double)[pri:1, instance:Tests.TestFigures.QuadratTest@3a5ed7a6, instance params:[]]" name="checkPerimetr" duration-ms="0" started-at="2019-12-20T11:21:24 MSK" data-provider="dp" finished-at="2019-12-20T11:21:24 MSK">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:820)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;
-at Tests.dataProviders.ProviderNew.dp(ProviderNew.java:9)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkPerimetr -->
-      </class> <!-- Tests.TestFigures.QuadratTest -->
+    <test name="Default test" duration-ms="40" started-at="2019-12-23T14:55:48 MSK" finished-at="2019-12-23T14:55:48 MSK">
       <class name="Tests.TestFigures.Figures">
-        <test-method status="SKIP" signature="checkCircl(java.lang.Double)[pri:4, instance:Tests.TestFigures.Figures@7fac631b]" name="checkCircl" duration-ms="0" started-at="2019-12-20T11:21:24 MSK" data-provider="dp" finished-at="2019-12-20T11:21:24 MSK">
-          <exception class="java.lang.RuntimeException">
+        <test-method status="FAIL" signature="checkCircl(java.lang.Double)[pri:0, instance:Tests.TestFigures.Figures@4fe3c938]" name="checkCircl" duration-ms="22" started-at="2019-12-23T14:55:48 MSK" data-provider="dp" finished-at="2019-12-23T14:55:48 MSK">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
             <message>
-              <![CDATA[java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;]]>
+              <![CDATA[
+[public void Tests.TestFigures.Figures.checkCircl(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkCircl([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:820)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.TestFigures.Figures.checkCircl(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkCircl([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -240,36 +45,53 @@ at org.testng.TestNG.run(TestNG.java:1000)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;
-at Tests.dataProviders.ProviderNew.dp(ProviderNew.java:9)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-... 25 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCircl -->
-        <test-method status="SKIP" signature="checkQuadrat(java.lang.Double)[pri:4, instance:Tests.TestFigures.Figures@7fac631b]" name="checkQuadrat" duration-ms="0" started-at="2019-12-20T11:21:24 MSK" data-provider="dp" finished-at="2019-12-20T11:21:24 MSK">
-          <exception class="java.lang.RuntimeException">
+        <test-method status="PASS" signature="checkCircl(java.lang.Double)[pri:0, instance:Tests.TestFigures.Figures@4fe3c938]" name="checkCircl" duration-ms="7" started-at="2019-12-23T14:55:48 MSK" data-provider="dp" finished-at="2019-12-23T14:55:48 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCircl -->
+        <test-method status="PASS" signature="checkCircl(java.lang.Double)[pri:0, instance:Tests.TestFigures.Figures@4fe3c938]" name="checkCircl" duration-ms="0" started-at="2019-12-23T14:55:48 MSK" data-provider="dp" finished-at="2019-12-23T14:55:48 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCircl -->
+        <test-method status="FAIL" signature="checkQuadrat(java.lang.Double)[pri:1, instance:Tests.TestFigures.Figures@4fe3c938]" name="checkQuadrat" duration-ms="3" started-at="2019-12-23T14:55:48 MSK" data-provider="dp" finished-at="2019-12-23T14:55:48 MSK">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
             <message>
-              <![CDATA[java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;]]>
+              <![CDATA[
+[public void Tests.TestFigures.Figures.checkQuadrat(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkQuadrat([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:820)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.TestFigures.Figures.checkQuadrat(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkQuadrat([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -289,36 +111,53 @@ at org.testng.TestNG.run(TestNG.java:1000)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;
-at Tests.dataProviders.ProviderNew.dp(ProviderNew.java:9)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-... 25 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkQuadrat -->
-        <test-method status="SKIP" signature="checkRectangle(java.lang.Double, java.lang.Double)[pri:4, instance:Tests.TestFigures.Figures@7fac631b]" name="checkRectangle" duration-ms="0" started-at="2019-12-20T11:21:24 MSK" data-provider="dp" finished-at="2019-12-20T11:21:24 MSK">
-          <exception class="java.lang.RuntimeException">
+        <test-method status="PASS" signature="checkQuadrat(java.lang.Double)[pri:1, instance:Tests.TestFigures.Figures@4fe3c938]" name="checkQuadrat" duration-ms="0" started-at="2019-12-23T14:55:48 MSK" data-provider="dp" finished-at="2019-12-23T14:55:48 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+        <test-method status="PASS" signature="checkQuadrat(java.lang.Double)[pri:1, instance:Tests.TestFigures.Figures@4fe3c938]" name="checkQuadrat" duration-ms="0" started-at="2019-12-23T14:55:48 MSK" data-provider="dp" finished-at="2019-12-23T14:55:48 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+        <test-method status="FAIL" signature="checkRectangle(java.lang.Double, java.lang.Double)[pri:2, instance:Tests.TestFigures.Figures@4fe3c938]" name="checkRectangle" duration-ms="0" started-at="2019-12-23T14:55:48 MSK" data-provider="dp" finished-at="2019-12-23T14:55:48 MSK">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
             <message>
-              <![CDATA[java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;]]>
+              <![CDATA[
+[public void Tests.TestFigures.Figures.checkRectangle(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkRectangle([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Double) 2.0]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:820)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.TestFigures.Figures.checkRectangle(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkRectangle([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Double) 2.0]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -338,248 +177,13 @@ at org.testng.TestNG.run(TestNG.java:1000)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [[Ljava.lang.Object;
-at Tests.dataProviders.ProviderNew.dp(ProviderNew.java:9)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-... 25 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkRectangle -->
       </class> <!-- Tests.TestFigures.Figures -->
-      <class name="Tests.TestFigures.RectangleTest">
-        <test-method status="FAIL" signature="checkPerimetr(java.lang.Double, java.lang.Double)[pri:0, instance:Tests.TestFigures.RectangleTest@6325a3ee, instance params:[]]" name="checkPerimetr" duration-ms="18" started-at="2019-12-20T11:21:24 MSK" data-provider="pr" finished-at="2019-12-20T11:21:24 MSK">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-[public void Tests.TestFigures.RectangleTest.checkPerimetr(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkPerimetr([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-[public void Tests.TestFigures.RectangleTest.checkPerimetr(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkPerimetr([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkPerimetr -->
-        <test-method status="PASS" signature="checkPerimetr(java.lang.Double, java.lang.Double)[pri:0, instance:Tests.TestFigures.RectangleTest@6325a3ee, instance params:[]]" name="checkPerimetr" duration-ms="8" started-at="2019-12-20T11:21:24 MSK" data-provider="pr" finished-at="2019-12-20T11:21:24 MSK">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2.0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkPerimetr -->
-        <test-method status="FAIL" signature="checkQuadrat(java.lang.Double, java.lang.Double)[pri:0, instance:Tests.TestFigures.RectangleTest@6325a3ee, instance params:[]]" name="checkQuadrat" duration-ms="1" started-at="2019-12-20T11:21:24 MSK" data-provider="pr" finished-at="2019-12-20T11:21:24 MSK">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2.0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2.0]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:751)
-at org.testng.Assert.assertEquals(Assert.java:761)
-at Tests.TestFigures.RectangleTest.checkQuadrat(RectangleTest.java:50)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkQuadrat -->
-        <test-method status="FAIL" signature="checkQuadrat(java.lang.Double, java.lang.Double)[pri:0, instance:Tests.TestFigures.RectangleTest@6325a3ee, instance params:[]]" name="checkQuadrat" duration-ms="2" started-at="2019-12-20T11:21:24 MSK" data-provider="pr" finished-at="2019-12-20T11:21:24 MSK">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-[public void Tests.TestFigures.RectangleTest.checkQuadrat(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkQuadrat([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-[public void Tests.TestFigures.RectangleTest.checkQuadrat(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkQuadrat([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkQuadrat -->
-        <test-method status="PASS" signature="checkRectangle(java.lang.Double, java.lang.Double)[pri:0, instance:Tests.TestFigures.RectangleTest@6325a3ee, instance params:[]]" name="checkRectangle" duration-ms="0" started-at="2019-12-20T11:21:24 MSK" data-provider="pr" finished-at="2019-12-20T11:21:24 MSK">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2.0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkRectangle -->
-        <test-method status="FAIL" signature="checkRectangle(java.lang.Double, java.lang.Double)[pri:0, instance:Tests.TestFigures.RectangleTest@6325a3ee, instance params:[]]" name="checkRectangle" duration-ms="1" started-at="2019-12-20T11:21:24 MSK" data-provider="pr" finished-at="2019-12-20T11:21:24 MSK">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-[public void Tests.TestFigures.RectangleTest.checkRectangle(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkRectangle([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-[public void Tests.TestFigures.RectangleTest.checkRectangle(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkRectangle([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkRectangle -->
-      </class> <!-- Tests.TestFigures.RectangleTest -->
-    </test> <!-- testing -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

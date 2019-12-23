@@ -23,7 +23,7 @@ public class RectangleTest {
 		
 		}
 
-	@Test(dataProvider = "pr", dataProviderClass =  ProviderRectangle.class, priority = 0)
+	@Test(dataProvider = "pr", dataProviderClass =  ProviderRectangle.class, priority = 1)
 	public void checkPerimetr(Double lengthOne, Double lengthTwo) {
 		double truePerimetr = Tests.roundUp.round(lengthOne * 2 + lengthTwo * 2);
 
@@ -34,7 +34,7 @@ public class RectangleTest {
 	
 	}
 	
-	@Test(dataProvider = "pr", dataProviderClass =  ProviderRectangle.class, priority = 0)
+	@Test(dataProvider = "pr", dataProviderClass =  ProviderRectangle.class, priority = 2)
 	public void checkQuadrat(Double lengthOne, Double lengthTwo) {
 		boolean trueQuadrat;
 		Rectangle rect = new GeometricObjects().getRectangle(lengthOne, lengthTwo);
