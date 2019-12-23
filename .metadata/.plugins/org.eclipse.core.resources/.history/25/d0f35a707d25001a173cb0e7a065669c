@@ -34,7 +34,7 @@ public class RectangleTest {
 	
 	}
 	
-	@Test(expectedExceptions = RuntimeException.class, expectedExceptionsMessageRegExp = "Is not Square", dataProvider = "pr", dataProviderClass =  ProviderRectangle.class, priority = 2)
+	@Test(dataProvider = "pr", dataProviderClass =  ProviderRectangle.class, priority = 2)
 	public void checkQuadrat(Double lengthOne, Double lengthTwo) {
 		boolean trueQuadrat;
 		Rectangle rect = new GeometricObjects().getRectangle(lengthOne, lengthTwo);
@@ -45,13 +45,10 @@ public class RectangleTest {
 		else 
 		{
 			trueQuadrat = false;
-			throw new RuntimeException("The values aren't the same");
 		}
 		
 		assertEquals(trueQuadrat, rect.isQuadrate());
 	}
-	
-	
 	
 }
 

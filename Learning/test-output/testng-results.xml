@@ -1,158 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="7" passed="4">
+<testng-results skipped="0" failed="12" ignored="0" total="24" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40" started-at="2019-12-23T14:55:48 MSK" finished-at="2019-12-23T14:55:48 MSK">
+  <suite name="Suite" duration-ms="58" started-at="2019-12-23T15:22:29 MSK" finished-at="2019-12-23T15:22:29 MSK">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40" started-at="2019-12-23T14:55:48 MSK" finished-at="2019-12-23T14:55:48 MSK">
-      <class name="Tests.TestFigures.Figures">
-        <test-method status="FAIL" signature="checkCircl(java.lang.Double)[pri:0, instance:Tests.TestFigures.Figures@4fe3c938]" name="checkCircl" duration-ms="22" started-at="2019-12-23T14:55:48 MSK" data-provider="dp" finished-at="2019-12-23T14:55:48 MSK">
+    <test name="testing" duration-ms="58" started-at="2019-12-23T15:22:29 MSK" finished-at="2019-12-23T15:22:29 MSK">
+      <class name="Tests.TestFigures.CircleTest">
+        <test-method status="FAIL" signature="checkCircumference(java.lang.Double, java.lang.Double)[pri:0, instance:Tests.TestFigures.CircleTest@7791a895, instance params:[]]" name="checkCircumference" duration-ms="1" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
           <exception class="org.testng.internal.reflect.MethodMatcherException">
             <message>
               <![CDATA[
-[public void Tests.TestFigures.Figures.checkCircl(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+[public void Tests.TestFigures.CircleTest.checkCircumference(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
 Data provider mismatch
-Method: checkCircl([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 10000]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-[public void Tests.TestFigures.Figures.checkCircl(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkCircl([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 10000]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkCircl -->
-        <test-method status="PASS" signature="checkCircl(java.lang.Double)[pri:0, instance:Tests.TestFigures.Figures@4fe3c938]" name="checkCircl" duration-ms="7" started-at="2019-12-23T14:55:48 MSK" data-provider="dp" finished-at="2019-12-23T14:55:48 MSK">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkCircl -->
-        <test-method status="PASS" signature="checkCircl(java.lang.Double)[pri:0, instance:Tests.TestFigures.Figures@4fe3c938]" name="checkCircl" duration-ms="0" started-at="2019-12-23T14:55:48 MSK" data-provider="dp" finished-at="2019-12-23T14:55:48 MSK">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2.5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkCircl -->
-        <test-method status="FAIL" signature="checkQuadrat(java.lang.Double)[pri:1, instance:Tests.TestFigures.Figures@4fe3c938]" name="checkQuadrat" duration-ms="3" started-at="2019-12-23T14:55:48 MSK" data-provider="dp" finished-at="2019-12-23T14:55:48 MSK">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-[public void Tests.TestFigures.Figures.checkQuadrat(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkQuadrat([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 10000]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-[public void Tests.TestFigures.Figures.checkQuadrat(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkQuadrat([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 10000]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkQuadrat -->
-        <test-method status="PASS" signature="checkQuadrat(java.lang.Double)[pri:1, instance:Tests.TestFigures.Figures@4fe3c938]" name="checkQuadrat" duration-ms="0" started-at="2019-12-23T14:55:48 MSK" data-provider="dp" finished-at="2019-12-23T14:55:48 MSK">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkQuadrat -->
-        <test-method status="PASS" signature="checkQuadrat(java.lang.Double)[pri:1, instance:Tests.TestFigures.Figures@4fe3c938]" name="checkQuadrat" duration-ms="0" started-at="2019-12-23T14:55:48 MSK" data-provider="dp" finished-at="2019-12-23T14:55:48 MSK">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2.5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkQuadrat -->
-        <test-method status="FAIL" signature="checkRectangle(java.lang.Double, java.lang.Double)[pri:2, instance:Tests.TestFigures.Figures@4fe3c938]" name="checkRectangle" duration-ms="0" started-at="2019-12-23T14:55:48 MSK" data-provider="dp" finished-at="2019-12-23T14:55:48 MSK">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-[public void Tests.TestFigures.Figures.checkRectangle(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkRectangle([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Method: checkCircumference([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[@org.testng.annotations.Optional(value=)]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
 Arguments: [(java.lang.Double) 2.0]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-[public void Tests.TestFigures.Figures.checkRectangle(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+[public void Tests.TestFigures.CircleTest.checkCircumference(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
 Data provider mismatch
-Method: checkRectangle([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Method: checkCircumference([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[@org.testng.annotations.Optional(value=)]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
 Arguments: [(java.lang.Double) 2.0]
 at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
 at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
@@ -182,8 +50,671 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- checkCircumference -->
+        <test-method status="FAIL" signature="checkSquare(java.lang.Double)[pri:1, instance:Tests.TestFigures.CircleTest@7791a895, instance params:[]]" name="checkSquare" duration-ms="4" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void Tests.TestFigures.CircleTest.checkSquare(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkSquare([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.TestFigures.CircleTest.checkSquare(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkSquare([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSquare -->
+        <test-method status="PASS" signature="checkSquare(java.lang.Double)[pri:1, instance:Tests.TestFigures.CircleTest@7791a895, instance params:[]]" name="checkSquare" duration-ms="1" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSquare -->
+        <test-method status="FAIL" signature="checkSquare(java.lang.Double)[pri:1, instance:Tests.TestFigures.CircleTest@7791a895, instance params:[]]" name="checkSquare" duration-ms="0" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect to find [19.635] but found [19.636]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect to find [19.635] but found [19.636]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:640)
+at org.testng.Assert.assertEquals(Assert.java:651)
+at Tests.TestFigures.CircleTest.checkSquare(CircleTest.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSquare -->
+      </class> <!-- Tests.TestFigures.CircleTest -->
+      <class name="Tests.TestFigures.QuadratTest">
+        <test-method status="PASS" signature="checkSquare(java.lang.Double)[pri:0, instance:Tests.TestFigures.QuadratTest@3a5ed7a6, instance params:[]]" name="checkSquare" duration-ms="1" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSquare -->
+        <test-method status="FAIL" signature="checkSquare(java.lang.Double)[pri:0, instance:Tests.TestFigures.QuadratTest@3a5ed7a6, instance params:[]]" name="checkSquare" duration-ms="2" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void Tests.TestFigures.QuadratTest.checkSquare(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkSquare([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.TestFigures.QuadratTest.checkSquare(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkSquare([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSquare -->
+        <test-method status="PASS" signature="checkSquare(java.lang.Double)[pri:0, instance:Tests.TestFigures.QuadratTest@3a5ed7a6, instance params:[]]" name="checkSquare" duration-ms="1" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSquare -->
+        <test-method status="PASS" signature="checkPerimetr(java.lang.Double)[pri:1, instance:Tests.TestFigures.QuadratTest@3a5ed7a6, instance params:[]]" name="checkPerimetr" duration-ms="0" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPerimetr -->
+        <test-method status="FAIL" signature="checkPerimetr(java.lang.Double)[pri:1, instance:Tests.TestFigures.QuadratTest@3a5ed7a6, instance params:[]]" name="checkPerimetr" duration-ms="2" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void Tests.TestFigures.QuadratTest.checkPerimetr(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkPerimetr([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.TestFigures.QuadratTest.checkPerimetr(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkPerimetr([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPerimetr -->
+        <test-method status="PASS" signature="checkPerimetr(java.lang.Double)[pri:1, instance:Tests.TestFigures.QuadratTest@3a5ed7a6, instance params:[]]" name="checkPerimetr" duration-ms="0" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPerimetr -->
+      </class> <!-- Tests.TestFigures.QuadratTest -->
+      <class name="Tests.TestFigures.Figures">
+        <test-method status="FAIL" signature="checkCircl(java.lang.Double)[pri:0, instance:Tests.TestFigures.Figures@7fac631b]" name="checkCircl" duration-ms="18" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void Tests.TestFigures.Figures.checkCircl(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkCircl([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.TestFigures.Figures.checkCircl(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkCircl([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCircl -->
+        <test-method status="PASS" signature="checkCircl(java.lang.Double)[pri:0, instance:Tests.TestFigures.Figures@7fac631b]" name="checkCircl" duration-ms="6" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCircl -->
+        <test-method status="PASS" signature="checkCircl(java.lang.Double)[pri:0, instance:Tests.TestFigures.Figures@7fac631b]" name="checkCircl" duration-ms="0" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCircl -->
+        <test-method status="FAIL" signature="checkQuadrat(java.lang.Double)[pri:1, instance:Tests.TestFigures.Figures@7fac631b]" name="checkQuadrat" duration-ms="3" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void Tests.TestFigures.Figures.checkQuadrat(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkQuadrat([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.TestFigures.Figures.checkQuadrat(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkQuadrat([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+        <test-method status="PASS" signature="checkQuadrat(java.lang.Double)[pri:1, instance:Tests.TestFigures.Figures@7fac631b]" name="checkQuadrat" duration-ms="0" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+        <test-method status="PASS" signature="checkQuadrat(java.lang.Double)[pri:1, instance:Tests.TestFigures.Figures@7fac631b]" name="checkQuadrat" duration-ms="0" started-at="2019-12-23T15:22:29 MSK" data-provider="dp" finished-at="2019-12-23T15:22:29 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+        <test-method status="FAIL" signature="checkRectangle(java.lang.Double, java.lang.Double)[pri:2, instance:Tests.TestFigures.Figures@7fac631b]" name="checkRectangle" duration-ms="2" started-at="2019-12-23T15:22:29 MSK" data-provider="pr" finished-at="2019-12-23T15:22:29 MSK">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void Tests.TestFigures.Figures.checkRectangle(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkRectangle([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.TestFigures.Figures.checkRectangle(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkRectangle([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRectangle -->
+        <test-method status="PASS" signature="checkRectangle(java.lang.Double, java.lang.Double)[pri:2, instance:Tests.TestFigures.Figures@7fac631b]" name="checkRectangle" duration-ms="1" started-at="2019-12-23T15:22:29 MSK" data-provider="pr" finished-at="2019-12-23T15:22:29 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- checkRectangle -->
       </class> <!-- Tests.TestFigures.Figures -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="Tests.TestFigures.RectangleTest">
+        <test-method status="PASS" signature="checkRectangle(java.lang.Double, java.lang.Double)[pri:0, instance:Tests.TestFigures.RectangleTest@6325a3ee, instance params:[]]" name="checkRectangle" duration-ms="2" started-at="2019-12-23T15:22:29 MSK" data-provider="pr" finished-at="2019-12-23T15:22:29 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRectangle -->
+        <test-method status="FAIL" signature="checkRectangle(java.lang.Double, java.lang.Double)[pri:0, instance:Tests.TestFigures.RectangleTest@6325a3ee, instance params:[]]" name="checkRectangle" duration-ms="2" started-at="2019-12-23T15:22:29 MSK" data-provider="pr" finished-at="2019-12-23T15:22:29 MSK">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void Tests.TestFigures.RectangleTest.checkRectangle(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkRectangle([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.TestFigures.RectangleTest.checkRectangle(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkRectangle([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRectangle -->
+        <test-method status="PASS" signature="checkPerimetr(java.lang.Double, java.lang.Double)[pri:1, instance:Tests.TestFigures.RectangleTest@6325a3ee, instance params:[]]" name="checkPerimetr" duration-ms="0" started-at="2019-12-23T15:22:29 MSK" data-provider="pr" finished-at="2019-12-23T15:22:29 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPerimetr -->
+        <test-method status="FAIL" signature="checkPerimetr(java.lang.Double, java.lang.Double)[pri:1, instance:Tests.TestFigures.RectangleTest@6325a3ee, instance params:[]]" name="checkPerimetr" duration-ms="1" started-at="2019-12-23T15:22:29 MSK" data-provider="pr" finished-at="2019-12-23T15:22:29 MSK">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void Tests.TestFigures.RectangleTest.checkPerimetr(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkPerimetr([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.TestFigures.RectangleTest.checkPerimetr(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkPerimetr([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPerimetr -->
+        <test-method status="FAIL" signature="checkQuadrat(java.lang.Double, java.lang.Double)[pri:2, instance:Tests.TestFigures.RectangleTest@6325a3ee, instance params:[]]" name="checkQuadrat" duration-ms="3" started-at="2019-12-23T15:22:29 MSK" data-provider="pr" finished-at="2019-12-23T15:22:29 MSK">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void Tests.TestFigures.RectangleTest.checkQuadrat(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkQuadrat([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.TestFigures.RectangleTest.checkQuadrat(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkQuadrat([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+        <test-method status="FAIL" signature="checkQuadrat(java.lang.Double, java.lang.Double)[pri:2, instance:Tests.TestFigures.RectangleTest@6325a3ee, instance params:[]]" name="checkQuadrat" duration-ms="0" started-at="2019-12-23T15:22:29 MSK" data-provider="pr" finished-at="2019-12-23T15:22:29 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.TestException">
+            <message>
+              <![CDATA[
+The exception was thrown with the wrong message: expected "Is not Square" but got "The values aren't the same"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestException: 
+The exception was thrown with the wrong message: expected "Is not Square" but got "The values aren't the same"
+at org.testng.internal.ExpectedExceptionsHolder.wrongException(ExpectedExceptionsHolder.java:70)
+at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:719)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.RuntimeException: The values aren't the same
+at Tests.TestFigures.RectangleTest.checkQuadrat(RectangleTest.java:48)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+      </class> <!-- Tests.TestFigures.RectangleTest -->
+    </test> <!-- testing -->
+  </suite> <!-- Suite -->
 </testng-results>
