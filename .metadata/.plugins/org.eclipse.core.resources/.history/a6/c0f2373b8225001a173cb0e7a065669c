@@ -15,7 +15,7 @@ import epam.saratov.homeWork.testng.objects.GeometricObjects.Rectangle;
 
 public class Figures {
 	@Test(dataProvider = "dp", dataProviderClass = ProviderNew.class, priority = 0)
-	public void checkCircl (double radius) {
+	public void checkCircl (Double radius) {
 		Circle circl = new GeometricObjects().getCircle(radius);
 		System.out.println(circl.getClass());
 		assertEquals(circl.getClass(),Circle.class);

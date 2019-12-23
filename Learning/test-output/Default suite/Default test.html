@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Dec 23 14:55:48 MSK 2019</td>
+<td>Started on:</td><td>Mon Dec 23 15:46:52 MSK 2019</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (40 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (46 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,200 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Tests.TestFigures.Figures.checkCircl()'><b>checkCircl</b><br>Test class: Tests.TestFigures.Figures</td>
-<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void Tests.TestFigures.Figures.checkCircl(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkCircl([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 10000]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1053631449", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1053631449'><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void Tests.TestFigures.Figures.checkCircl(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkCircl([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 10000]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>Tests.TestFigures.Figures@4fe3c938</td></tr>
-<tr>
-<td title='Tests.TestFigures.Figures.checkQuadrat()'><b>checkQuadrat</b><br>Test class: Tests.TestFigures.Figures</td>
-<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void Tests.TestFigures.Figures.checkQuadrat(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkQuadrat([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 10000]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace854507466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace854507466'><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void Tests.TestFigures.Figures.checkQuadrat(java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkQuadrat([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 10000]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>Tests.TestFigures.Figures@4fe3c938</td></tr>
-<tr>
-<td title='Tests.TestFigures.Figures.checkRectangle()'><b>checkRectangle</b><br>Test class: Tests.TestFigures.Figures</td>
-<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void Tests.TestFigures.Figures.checkRectangle(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkRectangle([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Double) 2.0]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace490150701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace490150701'><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void Tests.TestFigures.Figures.checkRectangle(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: checkRectangle([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
-Arguments: [(java.lang.Double) 2.0]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>Tests.TestFigures.Figures@4fe3c938</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -272,22 +78,77 @@ Arguments: [(java.lang.Double) 2.0]
 <td title='Tests.TestFigures.Figures.checkCircl()'><b>checkCircl</b><br>Test class: Tests.TestFigures.Figures<br>Parameters: 2.0</td>
 <td></td>
 <td>0</td>
-<td>Tests.TestFigures.Figures@4fe3c938</td></tr>
+<td>Tests.TestFigures.Figures@5383967b</td></tr>
 <tr>
 <td title='Tests.TestFigures.Figures.checkCircl()'><b>checkCircl</b><br>Test class: Tests.TestFigures.Figures<br>Parameters: 2.5</td>
 <td></td>
 <td>0</td>
-<td>Tests.TestFigures.Figures@4fe3c938</td></tr>
+<td>Tests.TestFigures.Figures@5383967b</td></tr>
+<tr>
+<td title='Tests.TestFigures.Figures.checkCircl()'><b>checkCircl</b><br>Test class: Tests.TestFigures.Figures<br>Parameters: 10000</td>
+<td></td>
+<td>0</td>
+<td>Tests.TestFigures.Figures@5383967b</td></tr>
 <tr>
 <td title='Tests.TestFigures.Figures.checkQuadrat()'><b>checkQuadrat</b><br>Test class: Tests.TestFigures.Figures<br>Parameters: 2.0</td>
 <td></td>
 <td>0</td>
-<td>Tests.TestFigures.Figures@4fe3c938</td></tr>
+<td>Tests.TestFigures.Figures@5383967b</td></tr>
 <tr>
 <td title='Tests.TestFigures.Figures.checkQuadrat()'><b>checkQuadrat</b><br>Test class: Tests.TestFigures.Figures<br>Parameters: 2.5</td>
 <td></td>
 <td>0</td>
-<td>Tests.TestFigures.Figures@4fe3c938</td></tr>
+<td>Tests.TestFigures.Figures@5383967b</td></tr>
+<tr>
+<td title='Tests.TestFigures.Figures.checkQuadrat()'><b>checkQuadrat</b><br>Test class: Tests.TestFigures.Figures<br>Parameters: 10000</td>
+<td></td>
+<td>0</td>
+<td>Tests.TestFigures.Figures@5383967b</td></tr>
+<tr>
+<td title='Tests.TestFigures.Figures.checkRectangle()'><b>checkRectangle</b><br>Test class: Tests.TestFigures.Figures<br>Parameters: 2.0, 2.0</td>
+<td></td>
+<td>0</td>
+<td>Tests.TestFigures.Figures@5383967b</td></tr>
+<tr>
+<td title='Tests.TestFigures.Figures.checkRectangle()'><b>checkRectangle</b><br>Test class: Tests.TestFigures.Figures<br>Parameters: 10000, 2.0</td>
+<td></td>
+<td>0</td>
+<td>Tests.TestFigures.Figures@5383967b</td></tr>
+<tr>
+<td title='Tests.TestFigures.Figures.checkRectangle()'><b>checkRectangle</b><br>Test class: Tests.TestFigures.Figures<br>Parameters: 2.5, 2.0</td>
+<td></td>
+<td>0</td>
+<td>Tests.TestFigures.Figures@5383967b</td></tr>
+<tr>
+<td title='Tests.TestFigures.Figures.checkRectangle()'><b>checkRectangle</b><br>Test class: Tests.TestFigures.Figures<br>Parameters: 2.0, 10000</td>
+<td></td>
+<td>0</td>
+<td>Tests.TestFigures.Figures@5383967b</td></tr>
+<tr>
+<td title='Tests.TestFigures.Figures.checkRectangle()'><b>checkRectangle</b><br>Test class: Tests.TestFigures.Figures<br>Parameters: 10000, 10000</td>
+<td></td>
+<td>0</td>
+<td>Tests.TestFigures.Figures@5383967b</td></tr>
+<tr>
+<td title='Tests.TestFigures.Figures.checkRectangle()'><b>checkRectangle</b><br>Test class: Tests.TestFigures.Figures<br>Parameters: 2.5, 10000</td>
+<td></td>
+<td>0</td>
+<td>Tests.TestFigures.Figures@5383967b</td></tr>
+<tr>
+<td title='Tests.TestFigures.Figures.checkRectangle()'><b>checkRectangle</b><br>Test class: Tests.TestFigures.Figures<br>Parameters: 2.0, 2.5</td>
+<td></td>
+<td>0</td>
+<td>Tests.TestFigures.Figures@5383967b</td></tr>
+<tr>
+<td title='Tests.TestFigures.Figures.checkRectangle()'><b>checkRectangle</b><br>Test class: Tests.TestFigures.Figures<br>Parameters: 10000, 2.5</td>
+<td></td>
+<td>0</td>
+<td>Tests.TestFigures.Figures@5383967b</td></tr>
+<tr>
+<td title='Tests.TestFigures.Figures.checkRectangle()'><b>checkRectangle</b><br>Test class: Tests.TestFigures.Figures<br>Parameters: 2.5, 2.5</td>
+<td></td>
+<td>0</td>
+<td>Tests.TestFigures.Figures@5383967b</td></tr>
 </table><p>
 </body>
 </html>

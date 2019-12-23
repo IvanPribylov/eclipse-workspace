@@ -13,7 +13,7 @@ import epam.saratov.homeWork.testng.objects.GeometricObjects.Rectangle;
 
 public class RectangleTest {
 	@Test(dataProvider = "pr", dataProviderClass = ProviderRectangle.class, priority = 0)
-	public void checkRectangle(double lengthOne, double lengthTwo) {
+	public void checkRectangle(Double lengthOne, Double lengthTwo) {
 		double trueSquare = Tests.roundUp.round(lengthOne * lengthTwo);
 
 		Rectangle rect = new GeometricObjects().getRectangle(lengthOne, lengthTwo);
@@ -24,7 +24,7 @@ public class RectangleTest {
 		}
 
 	@Test(dataProvider = "pr", dataProviderClass =  ProviderRectangle.class, priority = 1)
-	public void checkPerimetr(double lengthOne, double lengthTwo) {
+	public void checkPerimetr(Double lengthOne, Double lengthTwo) {
 		double truePerimetr = Tests.roundUp.round(lengthOne * 2 + lengthTwo * 2);
 
 		Rectangle rect = new GeometricObjects().getRectangle(lengthOne, lengthTwo);
@@ -35,7 +35,7 @@ public class RectangleTest {
 	}
 	
 	@Test(expectedExceptions = RuntimeException.class, expectedExceptionsMessageRegExp = "Is not Square", dataProvider = "pr", dataProviderClass =  ProviderRectangle.class, priority = 2)
-	public void checkQuadrat(double lengthOne, double lengthTwo) {
+	public void checkQuadrat(Double lengthOne, Double lengthTwo) {
 		boolean trueQuadrat;
 		Rectangle rect = new GeometricObjects().getRectangle(lengthOne, lengthTwo);
 		if (lengthOne == lengthTwo)

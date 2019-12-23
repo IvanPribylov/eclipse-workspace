@@ -15,7 +15,7 @@ import epam.saratov.homeWork.testng.objects.GeometricObjects.Circle;
 public class CircleTest {
 	@Test(dataProvider = "dp", dataProviderClass = ProviderNew.class, priority = 0)
 	@Parameters(value = "formulaIndex")
-	public void checkCircumference(@Optional ("") double formulaIndex, Double radius) {
+	public void checkCircumference(@Optional ("") Double formulaIndex, Double radius) {
 		double curumTrue = Tests.roundUp.round(Math.PI * formulaIndex * radius);
 
 		Circle circl = new GeometricObjects().getCircle(radius);
@@ -27,7 +27,7 @@ public class CircleTest {
 
 	@Test(dataProvider = "dp", dataProviderClass = ProviderNew.class, priority = 1)
 
-	public void checkSquare(double radius) {
+	public void checkSquare(Double radius) {
 		double squareTrue = Tests.roundUp.round(Math.PI * radius * radius);
 
 		Circle circl = new GeometricObjects().getCircle(radius);

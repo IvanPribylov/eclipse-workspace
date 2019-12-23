@@ -89,7 +89,6 @@ INDEX VERSION 1.131+C:\Users\Ivan_Pribylov\eclipse-workspace\.metadata\.plugins\
 2584067835.index
 3882489251.index
 617778156.index
-557760305.index
 1786429949.index
 1197999668.index
 3549900619.index
