@@ -18,7 +18,7 @@ public class SquareValidator {
 	if (lengthOne == lengthTwo)
 	{
 		quad = true;
-		
+		System.out.println("Figure is Square");
 	}
 	else
 	{

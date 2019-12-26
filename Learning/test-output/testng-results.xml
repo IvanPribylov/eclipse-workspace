@@ -1,13 +1,700 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="9" passed="6">
+<testng-results skipped="0" failed="9" ignored="0" total="36" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43" started-at="2019-12-26T13:47:59 MSK" finished-at="2019-12-26T13:47:59 MSK">
+  <suite name="Default suite" duration-ms="68" started-at="2019-12-26T18:25:08 MSK" finished-at="2019-12-26T18:25:08 MSK">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43" started-at="2019-12-26T13:47:59 MSK" finished-at="2019-12-26T13:47:59 MSK">
+    <test name="Default test" duration-ms="68" started-at="2019-12-26T18:25:08 MSK" finished-at="2019-12-26T18:25:08 MSK">
       <class name="Tests.TestFigures.RectangleTest">
-        <test-method status="FAIL" signature="checkSquare(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="6" started-at="2019-12-26T13:47:59 MSK" data-provider="twoNumbers" finished-at="2019-12-26T13:47:59 MSK">
+        <test-method status="PASS" signature="checkSquare(double, double)[pri:0, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="8" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSquare -->
+        <test-method status="FAIL" signature="checkSquare(double, double)[pri:0, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect to find [20000.0] but found [1.0E8]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect to find [20000.0] but found [1.0E8]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:640)
+at org.testng.Assert.assertEquals(Assert.java:651)
+at Tests.TestFigures.RectangleTest.checkSquare(RectangleTest.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSquare -->
+        <test-method status="FAIL" signature="checkSquare(double, double)[pri:0, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect to find [5.0] but found [6.25]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect to find [5.0] but found [6.25]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:640)
+at org.testng.Assert.assertEquals(Assert.java:651)
+at Tests.TestFigures.RectangleTest.checkSquare(RectangleTest.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSquare -->
+        <test-method status="PASS" signature="checkSquare(double, double)[pri:0, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSquare -->
+        <test-method status="PASS" signature="checkSquare(double, double)[pri:0, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSquare -->
+        <test-method status="PASS" signature="checkSquare(double, double)[pri:0, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSquare -->
+        <test-method status="PASS" signature="checkSquare(double, double)[pri:0, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSquare -->
+        <test-method status="FAIL" signature="checkSquare(double, double)[pri:0, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect to find [25000.0] but found [1.0E8]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect to find [25000.0] but found [1.0E8]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:640)
+at org.testng.Assert.assertEquals(Assert.java:651)
+at Tests.TestFigures.RectangleTest.checkSquare(RectangleTest.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSquare -->
+        <test-method status="PASS" signature="checkSquare(double, double)[pri:0, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSquare -->
+        <test-method status="PASS" signature="checkPerimetr(double, double)[pri:1, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkPerimetr" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPerimetr -->
+        <test-method status="PASS" signature="checkPerimetr(double, double)[pri:1, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkPerimetr" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPerimetr -->
+        <test-method status="PASS" signature="checkPerimetr(double, double)[pri:1, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkPerimetr" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPerimetr -->
+        <test-method status="PASS" signature="checkPerimetr(double, double)[pri:1, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkPerimetr" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPerimetr -->
+        <test-method status="PASS" signature="checkPerimetr(double, double)[pri:1, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkPerimetr" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPerimetr -->
+        <test-method status="PASS" signature="checkPerimetr(double, double)[pri:1, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkPerimetr" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPerimetr -->
+        <test-method status="PASS" signature="checkPerimetr(double, double)[pri:1, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkPerimetr" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPerimetr -->
+        <test-method status="PASS" signature="checkPerimetr(double, double)[pri:1, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkPerimetr" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPerimetr -->
+        <test-method status="PASS" signature="checkPerimetr(double, double)[pri:1, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkPerimetr" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPerimetr -->
+        <test-method status="PASS" signature="checkQuadrat(double, double)[pri:2, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkQuadrat" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+        <test-method status="PASS" signature="checkQuadrat(double, double)[pri:2, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkQuadrat" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+        <test-method status="PASS" signature="checkQuadrat(double, double)[pri:2, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkQuadrat" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+        <test-method status="FAIL" signature="checkQuadrat(double, double)[pri:2, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkQuadrat" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:751)
+at org.testng.Assert.assertEquals(Assert.java:761)
+at Tests.TestFigures.RectangleTest.checkQuadrat(RectangleTest.java:63)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+        <test-method status="PASS" signature="checkQuadrat(double, double)[pri:2, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkQuadrat" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+        <test-method status="FAIL" signature="checkQuadrat(double, double)[pri:2, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkQuadrat" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:751)
+at org.testng.Assert.assertEquals(Assert.java:761)
+at Tests.TestFigures.RectangleTest.checkQuadrat(RectangleTest.java:63)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+        <test-method status="FAIL" signature="checkQuadrat(double, double)[pri:2, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkQuadrat" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:751)
+at org.testng.Assert.assertEquals(Assert.java:761)
+at Tests.TestFigures.RectangleTest.checkQuadrat(RectangleTest.java:63)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+        <test-method status="PASS" signature="checkQuadrat(double, double)[pri:2, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkQuadrat" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+        <test-method status="PASS" signature="checkQuadrat(double, double)[pri:2, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkQuadrat" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuadrat -->
+        <test-method status="FAIL" signature="checkExpectedExeption(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkExpectedExeption" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
           <params>
             <param index="0">
               <value>
@@ -23,11 +710,11 @@
           <exception class="org.testng.TestException">
             <message>
               <![CDATA[
-Method RectangleTest.checkSquare(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b] should have thrown an exception of type class Tests.TestFigures.NotQuadratException]]>
+Method RectangleTest.checkExpectedExeption(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b] should have thrown an exception of type class Tests.TestFigures.NotQuadratException]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestException: 
-Method RectangleTest.checkSquare(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b] should have thrown an exception of type class Tests.TestFigures.NotQuadratException
+Method RectangleTest.checkExpectedExeption(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b] should have thrown an exception of type class Tests.TestFigures.NotQuadratException
 at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
 at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
@@ -58,8 +745,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.TestException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkSquare -->
-        <test-method status="PASS" signature="checkSquare(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="0" started-at="2019-12-26T13:47:59 MSK" data-provider="twoNumbers" finished-at="2019-12-26T13:47:59 MSK">
+        </test-method> <!-- checkExpectedExeption -->
+        <test-method status="PASS" signature="checkExpectedExeption(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkExpectedExeption" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
           <params>
             <param index="0">
               <value>
@@ -79,7 +766,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[Tests.TestFigures.NotQuadratException: Not Square, but ok
 at Tests.TestFigures.SquareValidator.square(SquareValidator.java:26)
-at Tests.TestFigures.RectangleTest.checkSquare(RectangleTest.java:71)
+at Tests.TestFigures.RectangleTest.checkExpectedExeption(RectangleTest.java:71)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -113,8 +800,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- Tests.TestFigures.NotQuadratException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkSquare -->
-        <test-method status="PASS" signature="checkSquare(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="0" started-at="2019-12-26T13:47:59 MSK" data-provider="twoNumbers" finished-at="2019-12-26T13:47:59 MSK">
+        </test-method> <!-- checkExpectedExeption -->
+        <test-method status="PASS" signature="checkExpectedExeption(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkExpectedExeption" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
           <params>
             <param index="0">
               <value>
@@ -134,7 +821,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[Tests.TestFigures.NotQuadratException: Not Square, but ok
 at Tests.TestFigures.SquareValidator.square(SquareValidator.java:26)
-at Tests.TestFigures.RectangleTest.checkSquare(RectangleTest.java:71)
+at Tests.TestFigures.RectangleTest.checkExpectedExeption(RectangleTest.java:71)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -168,8 +855,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- Tests.TestFigures.NotQuadratException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkSquare -->
-        <test-method status="PASS" signature="checkSquare(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="0" started-at="2019-12-26T13:47:59 MSK" data-provider="twoNumbers" finished-at="2019-12-26T13:47:59 MSK">
+        </test-method> <!-- checkExpectedExeption -->
+        <test-method status="PASS" signature="checkExpectedExeption(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkExpectedExeption" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
           <params>
             <param index="0">
               <value>
@@ -189,7 +876,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[Tests.TestFigures.NotQuadratException: Not Square, but ok
 at Tests.TestFigures.SquareValidator.square(SquareValidator.java:26)
-at Tests.TestFigures.RectangleTest.checkSquare(RectangleTest.java:71)
+at Tests.TestFigures.RectangleTest.checkExpectedExeption(RectangleTest.java:71)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -223,8 +910,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- Tests.TestFigures.NotQuadratException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkSquare -->
-        <test-method status="FAIL" signature="checkSquare(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="1" started-at="2019-12-26T13:47:59 MSK" data-provider="twoNumbers" finished-at="2019-12-26T13:47:59 MSK">
+        </test-method> <!-- checkExpectedExeption -->
+        <test-method status="FAIL" signature="checkExpectedExeption(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkExpectedExeption" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
           <params>
             <param index="0">
               <value>
@@ -240,11 +927,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <exception class="org.testng.TestException">
             <message>
               <![CDATA[
-Method RectangleTest.checkSquare(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b] should have thrown an exception of type class Tests.TestFigures.NotQuadratException]]>
+Method RectangleTest.checkExpectedExeption(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b] should have thrown an exception of type class Tests.TestFigures.NotQuadratException]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestException: 
-Method RectangleTest.checkSquare(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b] should have thrown an exception of type class Tests.TestFigures.NotQuadratException
+Method RectangleTest.checkExpectedExeption(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b] should have thrown an exception of type class Tests.TestFigures.NotQuadratException
 at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
 at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
@@ -275,8 +962,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.TestException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkSquare -->
-        <test-method status="PASS" signature="checkSquare(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="0" started-at="2019-12-26T13:47:59 MSK" data-provider="twoNumbers" finished-at="2019-12-26T13:47:59 MSK">
+        </test-method> <!-- checkExpectedExeption -->
+        <test-method status="PASS" signature="checkExpectedExeption(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkExpectedExeption" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
           <params>
             <param index="0">
               <value>
@@ -296,7 +983,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[Tests.TestFigures.NotQuadratException: Not Square, but ok
 at Tests.TestFigures.SquareValidator.square(SquareValidator.java:26)
-at Tests.TestFigures.RectangleTest.checkSquare(RectangleTest.java:71)
+at Tests.TestFigures.RectangleTest.checkExpectedExeption(RectangleTest.java:71)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -330,8 +1017,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- Tests.TestFigures.NotQuadratException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkSquare -->
-        <test-method status="PASS" signature="checkSquare(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="0" started-at="2019-12-26T13:47:59 MSK" data-provider="twoNumbers" finished-at="2019-12-26T13:47:59 MSK">
+        </test-method> <!-- checkExpectedExeption -->
+        <test-method status="PASS" signature="checkExpectedExeption(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkExpectedExeption" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
           <params>
             <param index="0">
               <value>
@@ -351,7 +1038,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[Tests.TestFigures.NotQuadratException: Not Square, but ok
 at Tests.TestFigures.SquareValidator.square(SquareValidator.java:26)
-at Tests.TestFigures.RectangleTest.checkSquare(RectangleTest.java:71)
+at Tests.TestFigures.RectangleTest.checkExpectedExeption(RectangleTest.java:71)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -385,8 +1072,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- Tests.TestFigures.NotQuadratException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkSquare -->
-        <test-method status="PASS" signature="checkSquare(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="0" started-at="2019-12-26T13:47:59 MSK" data-provider="twoNumbers" finished-at="2019-12-26T13:47:59 MSK">
+        </test-method> <!-- checkExpectedExeption -->
+        <test-method status="PASS" signature="checkExpectedExeption(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkExpectedExeption" duration-ms="0" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
           <params>
             <param index="0">
               <value>
@@ -406,7 +1093,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[Tests.TestFigures.NotQuadratException: Not Square, but ok
 at Tests.TestFigures.SquareValidator.square(SquareValidator.java:26)
-at Tests.TestFigures.RectangleTest.checkSquare(RectangleTest.java:71)
+at Tests.TestFigures.RectangleTest.checkExpectedExeption(RectangleTest.java:71)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -440,8 +1127,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- Tests.TestFigures.NotQuadratException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkSquare -->
-        <test-method status="FAIL" signature="checkSquare(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkSquare" duration-ms="1" started-at="2019-12-26T13:47:59 MSK" data-provider="twoNumbers" finished-at="2019-12-26T13:47:59 MSK">
+        </test-method> <!-- checkExpectedExeption -->
+        <test-method status="FAIL" signature="checkExpectedExeption(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b]" name="checkExpectedExeption" duration-ms="1" started-at="2019-12-26T18:25:08 MSK" data-provider="twoNumbers" finished-at="2019-12-26T18:25:08 MSK">
           <params>
             <param index="0">
               <value>
@@ -457,11 +1144,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <exception class="org.testng.TestException">
             <message>
               <![CDATA[
-Method RectangleTest.checkSquare(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b] should have thrown an exception of type class Tests.TestFigures.NotQuadratException]]>
+Method RectangleTest.checkExpectedExeption(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b] should have thrown an exception of type class Tests.TestFigures.NotQuadratException]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestException: 
-Method RectangleTest.checkSquare(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b] should have thrown an exception of type class Tests.TestFigures.NotQuadratException
+Method RectangleTest.checkExpectedExeption(double, double)[pri:3, instance:Tests.TestFigures.RectangleTest@5383967b] should have thrown an exception of type class Tests.TestFigures.NotQuadratException
 at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
 at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
@@ -492,7 +1179,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.TestException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkSquare -->
+        </test-method> <!-- checkExpectedExeption -->
       </class> <!-- Tests.TestFigures.RectangleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

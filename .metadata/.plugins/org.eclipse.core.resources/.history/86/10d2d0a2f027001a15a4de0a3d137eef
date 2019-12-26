@@ -23,7 +23,7 @@ public class RectangleTest {
 	
 
 	@Test(dataProvider = "twoNumbers", dataProviderClass = ProviderRectangle.class, priority = 0)
-	public void checkSquare(double lengthOne, double lengthTwo) {
+	public void checkRectangle(double lengthOne, double lengthTwo) {
 		double trueSquare = Tests.roundUp.round(lengthOne * lengthTwo);
 
 		Rectangle rect = new GeometricObjects().getRectangle(lengthOne, lengthTwo);
@@ -63,12 +63,13 @@ public class RectangleTest {
 		assertEquals(trueQuadrat, rect.isQuadrate());
 			}
 
-	@Test(expectedExceptions = NotQuadratException.class, expectedExceptionsMessageRegExp =  "Not Square, but ok", dataProvider = "twoNumbers", dataProviderClass =  ProviderRectangle.class,  priority = 3)
-	public void checkExpectedExeption(double lengthOne, double lengthTwo) throws NotQuadratException
+	@Test(expectedExceptions = NotQuadratException.class,dataProvider = "twoNumbers", dataProviderClass =  ProviderRectangle.class,  priority = 3)
+	public void checkSquare(double lengthOne, double lengthTwo) throws NotQuadratException
 	{
-	  //SquareValidator.square(lengthOne, lengthTwo);	
-		SquareValidator sv = new SquareValidator();
-		sv.square(lengthOne,lengthTwo);
+		
+		
+		assertTrue(SquareValidator.square(lengthOne, lengthTwo));	
+
 }
 	
 }

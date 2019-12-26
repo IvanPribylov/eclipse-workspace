@@ -16,7 +16,7 @@ public class CircleTest {
 	@Test(priority = 0)
 	@Parameters(value = "formulaIndex")
 	public void checkCircumference(@Optional ("") double formulaIndex) {
-		double curumTrue = Tests.roundUp.round(Math.PI *2* formulaIndex);
+		double curumTrue = Tests.roundUp.round(Math.PI * formulaIndex);
 
 		Circle circl = new GeometricObjects().getCircle(formulaIndex);
 		double curum = Tests.roundUp.round(circl.getCircumference());
