@@ -5,7 +5,7 @@ import org.testng.annotations.DataProvider;
 public class ProviderNew {
 	
 	@DataProvider
-	public static Object[] [] dp() {
+	public static Object[] [] oneNumber() {
 		return new Object[][] { new Object[] {2.0}, new Object[] {2.5}, new Object[] {10000.0}	};
 	
 	}

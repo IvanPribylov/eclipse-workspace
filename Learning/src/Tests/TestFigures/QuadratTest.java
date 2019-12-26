@@ -12,7 +12,7 @@ import epam.saratov.homeWork.testng.objects.GeometricObjects.Quadrate;
 
 public class QuadratTest 	{
 	
-	@Test(dataProvider = "dp", dataProviderClass = ProviderNew.class, priority = 0)
+	@Test(dataProvider = "oneNumber", dataProviderClass = ProviderNew.class, priority = 0)
 	public void checkSquare (double lengthOne) {
 		double trueSquare = Tests.roundUp.round(lengthOne * lengthOne);
 
@@ -23,7 +23,7 @@ public class QuadratTest 	{
 		
 	}
 
-	@Test( dataProvider = "dp", dataProviderClass = ProviderNew.class, priority = 1)
+	@Test( dataProvider = "oneNumber", dataProviderClass = ProviderNew.class, priority = 1)
 	public void checkPerimetr(double lengthOne) {
 		double truePerimetr = Tests.roundUp.round(lengthOne * 4);
 

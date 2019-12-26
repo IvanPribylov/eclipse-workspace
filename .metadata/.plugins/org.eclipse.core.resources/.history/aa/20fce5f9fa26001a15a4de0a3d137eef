@@ -1,0 +1,9 @@
+package Tests.TestFigures;
+
+public class NotQuadrat extends Exception{
+
+	public NotQuadrat(String message) {
+    super(message);
+}
+	
+}

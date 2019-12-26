@@ -1,0 +1,30 @@
+package Tests.TestFigures;
+
+import org.testng.annotations.Test;
+
+import Tests.dataProviders.ProviderNew;
+
+public class Exeption {
+	
+	public class DivisionToZeroException extends ArithmeticException {
+
+	   public DivisionToZeroException(String message) {
+	       super(message);
+	   }
+	}
+	
+	@Test(expectedExceptions = ArithmeticException.class, dataProvider = "oneNumber", dataProviderClass = ProviderNew.class)
+   public void DivisionTest(double number) {
+		 double divi;
+      if (number != 0)
+      { 
+      	divi = 1/number;
+      }
+      else
+      {
+      	throw  new ArithmeticException();
+      }
+	}
+
+		
+}

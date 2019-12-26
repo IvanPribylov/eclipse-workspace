@@ -2,3 +2,18 @@
 1577087566033	Move compilation unit
 1577087639837	Move compilation unit
 1577087645312	Move compilation unit
+1577195965236	Convert local variable 'i' to field
+1577195978727	Encapsulate field 'i'
+1577196557999	Convert local variable 'i' to field
+1577196599305	Encapsulate field 'i2'
+1577196657908	Convert local variable 'i' to field
+1577196680785	Encapsulate field 'i'
+1577196826792	Convert local variable 'i' to field
+1577196837362	Encapsulate field 'i'
+1577203142895	Convert local variable 'divi' to field
+1577203152891	Encapsulate field 'divi'
+1577258618023	Delete element
+1577261413638	Delete element
+1577264130590	Rename type 'NotQadrat'
+1577266996456	Rename type 'NotQuadrat'
+1577267117802	Rename type 'Exeption'

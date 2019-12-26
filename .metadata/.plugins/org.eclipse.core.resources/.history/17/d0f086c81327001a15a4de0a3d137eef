@@ -1,0 +1,26 @@
+package Tests.TestFigures;
+
+
+import  Tests.TestFigures.NotQuadratException;
+
+import epam.saratov.homeWork.testng.objects.GeometricObjects;
+import epam.saratov.homeWork.testng.objects.GeometricObjects.Rectangle;
+
+public class SquareValidator {
+			
+	
+	public static boolean square(double lengthOne, double lengthTwo) throws NotQuadratException
+	{
+		Rectangle rect = new GeometricObjects().getRectangle(lengthOne, lengthTwo);
+		boolean quad = rect.isQuadrate();
+//	if (quad == true)
+//	{
+//		System.out.println("Figure is Square");
+//	}
+//	else
+//	{
+//		throw new NotQuadratException("Not Square, but ok");
+//	}
+		return quad;
+}
+}

@@ -23,4 +23,5 @@
 <fullyQualifiedTypeName name="Tests.roundUp"/>
 <fullyQualifiedTypeName name="com.copyright.rup.qa.common.ui.support.DriverRunner"/>
 <fullyQualifiedTypeName name="org.testng.annotations.Optional"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 </qualifiedTypeNameHistroy>

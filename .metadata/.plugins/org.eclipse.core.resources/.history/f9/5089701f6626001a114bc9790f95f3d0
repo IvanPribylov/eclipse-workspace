@@ -1,0 +1,28 @@
+package Tests.TestFigures;
+
+import org.testng.annotations.Test;
+
+public class Exeption {
+	
+	 private double i;
+
+	@Test(expectedExceptions = ArithmeticException.class)
+   public void DivisionToZeroException() {
+       setI(1/0);
+        }
+
+	public double getI() {
+		return i;
+	}
+
+	public void setI(int i) {
+		this.i = i;
+	}
+
+	public class DivisionToZeroException extends ArithmeticException {
+
+	   public DivisionToZeroException(String message) {
+	     
+	   }
+	}
+}

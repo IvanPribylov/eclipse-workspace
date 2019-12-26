@@ -1,0 +1,12 @@
+package Tests.TestFigures;
+
+import org.testng.annotations.Test;
+
+public class Exeption {
+	
+	 @Test(expectedExceptions = ArithmeticException.class)
+   public void divisionWithException() {
+       int i = 1/0;
+   }
+
+}

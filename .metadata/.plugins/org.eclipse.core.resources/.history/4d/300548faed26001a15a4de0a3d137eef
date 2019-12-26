@@ -1,0 +1,8 @@
+package Tests.TestFigures;
+
+public class IsNotQuadrat extends Exception {
+
+  public IsNotQuadrat (String message) {
+    super(message);
+}
+}
